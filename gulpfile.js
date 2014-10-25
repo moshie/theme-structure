@@ -3,7 +3,7 @@ var gulp            = require('gulp'),
     uglify          = require('gulp-uglify'),
     notify          = require("gulp-notify"),
     minifycss       = require('gulp-minify-css'),
-    autoprefixer    = require('gulp-minify-css');
+    autoprefixer    = require('gulp-autoprefixer');
 
 
 var paths = {
