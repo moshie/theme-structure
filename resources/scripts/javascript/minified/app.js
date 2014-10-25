@@ -1,0 +1,1 @@
+!function(n){var t,i={init:function(){}};n.fn.ltTheme=function(e){var o=this;return t=n.extend({},n.fn.ltTheme.options,e),i.init(o),this},n.fn.ltTheme.options={}}(jQuery,window,document);

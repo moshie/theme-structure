@@ -1,0 +1,23 @@
+{
+    "name": "lt-framework",
+    "version": "0.1.0",
+    "authors": [
+        "Christopher Geary <chris.geary@ltconsulting.co.uk>",
+        "David Hewitt <david.hewitt@ltconsulting.co.uk>"
+    ],
+    "description": "A WordPress theme framework for rapid development",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "resources/components/",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.1",
+        "bootstrap-sass": "~3.0.2"
+    }
+}

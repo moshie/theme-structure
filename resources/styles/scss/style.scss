@@ -1,0 +1,22 @@
+/**
+ *  Theme Name: LT
+ *  Description: Custom WordPress theme for rapid website & web application development.
+ *  Author: LT Consulting Solutions Ltd.
+ *  Author URI: http://www.ltconsulting.co.uk/
+ */
+
+// Vendor Dependencies
+@import "vendors/_thirdparty";
+
+// Authored Dependencies
+@import "utilities/_all";
+@import "base/_all";
+
+// Patterns
+@import "components/_all";
+
+// Sections
+@import "partials/_all";
+
+// Theme Specific
+@import "themes/_all";
