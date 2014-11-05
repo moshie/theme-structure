@@ -48,11 +48,13 @@ gulp.task('stylesDev', function() {
 });
 
 gulp.task('default', function() {
+    gulp.run(['styles', 'scripts']);
     gulp.watch('resources/styles/scss/**/*.scss', ['styles']);
-    gulp.watch('resources/scripts/javascripts/**/*.scss', ['scripts']);
+    gulp.watch('resources/scripts/javascripts/**/*.js', ['scripts']);
 });
 
 gulp.task('dev', function() {
+    gulp.run(['styles']);
     gulp.watch('resources/styles/scss/**/*.scss', ['stylesDev']);
 });
 
