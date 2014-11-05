@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(paths.js + '/**/*.js')
+    return gulp.src(paths.js + '/*.js')
         .pipe(uglify())
         .pipe(gulp.dest(paths.jsmin))
         .pipe(notify('scripts have been compiled'));
