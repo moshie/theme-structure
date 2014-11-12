@@ -1,0 +1,9 @@
+
+/node_modules
+/resources/components
+/.idea
+composer.phar
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
