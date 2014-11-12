@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
+<?php get_header(); ?>
 
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<div class="container">
 
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+		<div class="row">
 
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+			<div class="content col-sm-8">
 
-    <?php wp_head(); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-</head>
-<body <?php body_class(); ?>>
+					<?php get_template_part( 'content', get_post_type() ); ?>
 
-<?php wp_footer(); ?>
+				<?php endwhile; ?>
 
-</body>
-</html>
+				<?php else : ?>
+
+					<?php _e( 'Sorry, no posts matched your criteria', LTCON_THEME_TEXTDOMAIN ); ?>
+
+				<?php endif; ?>
+
+				<?php ltcon_archive_pagination(); ?>
+
+			</div>
+
+			<?php get_sidebar(); ?>
+
+		</div>
+
+	</div>
+
+<?php get_footer();

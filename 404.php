@@ -22,6 +22,7 @@
 			<?php endif; ?>
 
 		</ul>
+
 	</div>
 
 <?php get_footer(); ?>
